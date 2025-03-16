@@ -1,8 +1,8 @@
 # required fields
 log_level: debug
-api_key: APIA2zJFaMRctfZ
-api_secret: jWXlEyKmu5eazIGViKFfO0TgT6el8EyjvMR0Tei3HFrB
-ws_url: ws://livekit:7880
+api_key: APIrPAgFSy37s5g
+api_secret: PG93VnGw6VfIpXFIRKu26h0WtVoHwuf8i7ZZ87DAf1GB
+ws_url: wss://atl5d-79f5a1jx.livekit.cloud
 redis:
   address: redis:6379
   username: ""

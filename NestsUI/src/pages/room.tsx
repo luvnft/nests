@@ -57,7 +57,7 @@ export default function Room() {
   if (!event || !room?.token || !link) return <JoinRoom />;
 
   const livekitUrl = event?.tags.find(
-    (a) => a[0] === "streaming" && (a[1].startsWith("ws+livekit://") || a[1].startsWith("wss+livekit://")),
+    (a) => a[0] === "streaming" && (a[1].startsWith("ws+livekit://atl5d-79f5a1jx.livekit.cloud") || a[1].startsWith("ws+livekit://atl5d-79f5a1jx.livekit.cloud")),
   )?.[1];
   const status = event?.tags.find((a) => a[0] === "status")?.[1];
   const isLive = status === "live";
@@ -78,7 +78,7 @@ function ParticipantsPannel({ event }: { event: NostrEvent }) {
   return (
     <div className={`lg:w-[calc(100vw-${ChatWidth}px)] max-lg:w-screen overflow-y-auto`}>
       <div className="px-4 pt-6">
-        <button className="flex gap-2 items-center text-highlight cursor-pointer" onClick={() => navigate("/")}>
+        <button className="flex items-center gap-2 cursor-pointer text-highlight" onClick={() => navigate("/")}>
           <Icon name="chevron" />
           <FormattedMessage defaultMessage="Lobby" />
         </button>
